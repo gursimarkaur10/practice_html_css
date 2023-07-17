@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .new{
+                background-color: aquamarine;
+            }
+            li a {
+                display: block;
+                color: rgb(206, 47, 47);
+                 text-align: center;
+                 padding: 14px 16px;
+                 text-decoration: none;
+                 font-size: large;
+            }
+            ul {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                 overflow: hidden;
+                 background-color: aquamarine;
+            }
+            .simple{
+                padding-left: 0;
+                text-align:center;
+            }
+            .col-sm-7{
+                text-align:left;
+                padding-left: 250;
+            }
+            .button1{
+                text-align: center;
+            }
+            .col-sm-5{
+                padding-top: 50;
+            }
+            .head{
+                text-align: left !important;
+                 padding-left: 50px !important;
+                 font-weight: 600 !important;
+                 letter-spacing: 1 !important;
+                 font-family: system-ui !important;
+            }
+            .image{
+                vertical-align: middle;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <!-- <h1>DRIVING  PRACTICE  TEST</h1> -->
+    <div class="container-fluid">
+        <ul>
+            <h1 style="float: left;" class="new">DRIVING PRACTICE TEST</h1>
+            <li style="float:right"><a href="index.html">Login</a></li>
+            <li style="float:right"><a href="sign_up.html">Sign up</a></li>  
+        </ul>
+        <!-- <h1 style="font-style:script" class="simple">Driving Practice Test</h1><br> -->
+        <form>
+            <!-- <div class="image">
+            <img src="images/drive.jpg" width="100"  alt="image" ><br>
+            </div> -->
+            <!-- <div class="home">
+                <img src="images/drive.jpg" width="100"  alt="image" ><br><br>
+            <label>Select category &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </label><br>
+            <input type="text" name="category" placeholder="TestCat1"><br><br>
+            <label>Number of questions &nbsp;</label><br>
+            <input type="text" name="category"><br><br>
+            <button type="submit" class="button1">Practice now!</button>
+            </div> -->
+            <h1 style="font-style:script" class="head">Driving Practice Test</h1><br>
+            <div class="row">
+                <div class="col-sm-7">            
+                    <label>Select category &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </label><br>
+                    <!-- <input type="text" name="category" placeholder="TestCat1"><br><br> -->
+                    <select>
+                        <option>TestCat1</option>
+                        <option>TestCat2</option>
+                    </select><br><br>
+                    <label>Number of questions &nbsp;</label><br>
+                    <input type="text" name="category"><br><br>
+                    <button type="submit" class="button1">Practice now!</button>
+                </div>
+                <div class="col-sm-5">
+                    <img src="images/driving.jpg" width="500" height="auto"  class="image" alt="image" ><br><br>
+                </div>
+            </div>
+    </div>
+        </form>
+        
+    </body>
+</html>

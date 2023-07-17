@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping Site for Fashion, Electronics, Home & More | Meesho
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icon  -->
+    <link rel="icon" href="images/Meesho_Logo_Full.png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerLeft">
+        <div class="logo_container">
+          <img src="images/logo.png" alt="" class="logo_img" />
+        </div>
+
+        <!-- search box -->
+        <div class="search_input_container">
+          <div class="search_icon">
+            <img src="images/search.jpg" alt="" />
+          </div>
+          <form action="" id="inputForm">
+            <input
+              type="text"
+              placeholder="Try Saree, Kurti or search by Product Code"
+              class="input_search"
+            />
+          </form>
+          <div class="input_close_search">
+            <i class="fa-solid fa-xmark" id="closeSearch"></i>
+          </div>
+          <div class="search_recent">
+            <h3>Recent Searches</h3>
+            <div class="listofRecent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="headerRight">
+        <div class="downloadContainer">
+          <div class="mobile_icon">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <p>Download App</p>
+          <div class="download_hover_container">
+            <h3>Download From</h3>
+            <a href="" class="downloadBtn">
+              <img src="images/gp.png" alt="" />
+            </a>
+            <a href="" class="downloadBtn">
+              <img src="images/aap.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="supplierContainer">
+          <p>Become a Supplier</p>
+        </div>
+
+        <div class="profile_cart">
+          <div class="profileContainer">
+            <div class="profile_icon">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <p>Profile</p>
+          </div>
+
+          <div class="cartContainer">
+            <div class="cart_icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p>Cart</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- navigation -->
+    <nav>
+      <ul>
+        <li>
+          Women Ethnic
+          <div class="subMenu">
+            <div id="WomenEthic" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Women Western
+          <div class="subMenu">
+            <div id="womenWestern" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Men
+          <div class="subMenu">
+            <div id="Men" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Kids
+          <div class="subMenu">
+            <div id="kid" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Home & Kitchen
+          <div class="subMenu">
+            <div id="home_kitchen" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Beauty & Health
+          <div class="subMenu">
+            <div id="beauty_health" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Jewellery & Accessories
+          <div class="subMenu">
+            <div id="jewellery_accessory" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Bags & Footwear
+          <div class="subMenu">
+            <div id="bag_footwear" class="subMenuList"></div>
+          </div>
+        </li>
+        <li>
+          Electronics
+          <div class="subMenu">
+            <div id="electronic" class="subMenuList"></div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- lowest prices -->
+    <div class="lowestpricecontainer">
+      <div class="lowestprice_text">
+        <h1>Lowest Prices</h1>
+        <h1>Best Quality Shopping</h1>
+        <div class="lowestPriceWays">
+          <div class="lowerstPriceItem">
+            <div class="lowestPrice_icon">
+              <img
+                src="https://images.meesho.com/images/pow/freeDelivery.svg"
+                alt=""
+              />
+            </div>
+            <p>Free Delivery</p>
+          </div>
+
+          <div class="lowerstPriceItem">
+            <div class="lowestPrice_icon">
+              <img src="https://images.meesho.com/images/pow/cod.svg" alt="" />
+            </div>
+            <p>Cash on Delivery</p>
+          </div>
+
+          <div class="lowerstPriceItem">
+            <div class="lowestPrice_icon">
+              <img
+                src="https://images.meesho.com/images/pow/easyReturns.svg"
+                alt=""
+              />
+            </div>
+            <p>Easy Returns</p>
+          </div>
+        </div>
+
+        <button class="downloadApp_container">
+          <div class="downloadApp_icon">
+            <img
+              src="https://images.meesho.com/images/pow/playstoreSmallIcon.webp"
+              alt=""
+            />
+          </div>
+          <p>Download the Meesho App</p>
+        </button>
+      </div>
+
+      <div class="lowestprice_image">
+        <img
+          src="https://images.meesho.com/images/marketing/1678691617864.webp"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- top categories to choose from  -->
+    <div class="topCategoriesFrom">
+      <div class="topCategoriesHeading">
+        <span class="horizontalLine"></span>
+        <h1>Top Categories to choose from</h1>
+        <span class="horizontalLine"></span>
+      </div>
+
+      <div class="topCategoriesImage">
+        <img
+          src="https://images.meesho.com/images/marketing/1678691686252.webp"
+          alt=""
+        />
+        <img
+          src="https://images.meesho.com/images/marketing/1678691699680.webp"
+          alt=""
+        />
+        <img
+          src="https://images.meesho.com/images/marketing/1678691712594.webp"
+          alt=""
+        />
+      </div>
+      <div class="essentialContainer">
+        <img src="images/view.png" alt="" class="essential_button" />
+        <div class="essential_items">
+          <img src="images/homedecor.png" alt="" />
+          <img src="images/homedecor1.png" alt="" />
+        </div>
+        <div class="essential_items">
+          <img src="images/kitchen.png" alt="" />
+          <img src="images/kitchen1.png" alt="" />
+        </div>
+        <div class="essential_items">
+          <img src="images/healthcare.png" alt="" />
+          <img src="images/healthcare1.png" alt="" />
+        </div>
+      </div>
+
+      <div class="styleContainer">
+        <img src="images/view.png" alt="" class="style_button" />
+        <div class="style_items">
+          <img src="images/accessories.png" alt="" />
+          <img src="images/accessories1.png" alt="" />
+        </div>
+        <div class="style_items">
+          <img src="images/footwear.png" alt="" />
+          <img src="images/footwear1.png" alt="" />
+        </div>
+        <div class="style_items">
+          <img src="images/elect.png" alt="" />
+          <img src="images/elect1.png" alt="" />
+        </div>
+      </div>
+
+      
+      <div class="becomesellerBanner_Container">
+        <img
+          src="images/downloadBannerDesktop.png"
+          class="becomesellerBanner"
+        />
+        <div class="becomeSeller_Content">
+          <div class="becomeSeller_content_content">
+            <h2>Become a Seller and</h2>
+            <h1>Start your Online Business with Zero Investment</h1>
+            <div class="becomerSeller_appDownload_container">
+              <a href="#" class="becomerSeller_appDownload">
+                <img src="images/playstoreIcon.png" />
+              </a>
+              <a href="#" class="becomerSeller_appDownload">
+                <img src="images/appstoreIcon.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="meesho_supper_container">
+        <img src="images/supplyBannerDesktop.png" />
+        <div class="meesho_supper_container_content">
+          <div class="meesho_supper_container_content_content">
+            <h1>Register as a Meesho Supplier</h1>
+            <p>Sell your products to crores of customers at 0% commission</p>
+            <div class="meesho-suppliear_benifit_container">
+              <div class="meesho_supper_benifit">
+                <img class="meeesho_benifit_image" src="images/tick.png" />
+                <p>Grow your business 10x</p>
+              </div>
+              <div class="meesho_supper_benifit">
+                <img class="meeesho_benifit_image" src="images/tick.png" />
+                <p>Enjoy 100% Profit</p>
+              </div>
+              <div class="meesho_supper_benifit">
+                <img class="meeesho_benifit_image" src="images/tick.png" />
+                <p>Sell all over India</p>
+              </div>
+            </div>
+            <a href="#" class="signup_btn_now">Sign up now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Products For You-->
+    <div class="Product_container_You">
+      <h1 >Products For You</h1>
+      <div class="product_container_you_content">
+          <aside class="product_category_you_aside">
+              <h3>Category</h3>
+              <div class="search_category_input">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Search"/>
+              </div>
+              <div class="display_Category_list">
+                  <label for="bluetooth" >
+                      <input type="checkbox" id="bluetooth"/>
+                      <span>bluetooth Headset</span>
+                  </label>
+                  <label for="chains">
+                      <input type="checkbox" id="chains"/>
+                      <span>Men Chains</span>
+                  </label>
+                  <label for="kurtas">
+                      <input type="checkbox" id="kurtas"/>
+                      <span>Kurtas</span>
+                  </label>
+                  <label for="accessories">
+                      <input type="checkbox" id="accessories"/>
+                      <span>Mobile Accessories</span>
+                  </label>
+                  <label for="sarees">
+                      <input type="checkbox" id="sarees"/>
+                      <span>sarees</span>
+                  </label>
+                  <label for="watch">
+                      <input type="checkbox" id="watch"/>
+                      <span>watch</span>
+                  </label>
+              </div>
+              
+          </aside>
+          <main class="product_category_display" id="product_category_displayId">
+              <!-- <--render product---> 
+          </main>
+      </div>
+  </div>
+
+
+
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>
